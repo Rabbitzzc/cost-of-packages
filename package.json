@@ -1,0 +1,32 @@
+{
+  "name": "cost-of-packages",
+  "version": "0.1.0",
+  "description": "find the cost of adding a npm package to your bundle.",
+  "main": "index.js",
+  "repository": "https://github.com/Rabbitzzc/cost-of-packages.git",
+  "author": "Rabbitzzc <zzclovelcs@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lib": "",
+    "lint": "eslint src --ext .ts",
+    "tsc": "tsc src/*.ts",
+    "start": "nodemon --exec ./node_modules/.bin/ts-node -- src/*.ts",
+    "tsc:w": "nodemon -e ts --exec yarn tsc",
+    "test": "tsc -p tsconfig.test.json && tap"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.12",
+    "@types/yargs": "^13.0.3",
+    "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "@typescript-eslint/parser": "^2.8.0",
+    "eslint": "^6.7.1",
+    "eslint-config-alloy": "^3.2.0",
+    "nodemon": "^2.0.1",
+    "ts-node": "^8.5.2",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "yargs": "^15.0.2"
+  }
+}

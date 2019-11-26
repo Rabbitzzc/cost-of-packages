@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "jsx": "preserve",
+        "removeComments": true,
+        "sourceMap": true,
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
+        "watch": true,
+        "target": "es2020",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "lib": [
+            "es2018"
+        ],
+        "outDir": "./test-tap"
+    },
+    "include": [
+        "./test"
+    ]
+}
