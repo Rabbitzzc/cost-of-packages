@@ -1,5 +1,5 @@
 {
-  "name": "cost-of-packages",
+  "name": "depcost",
   "version": "0.1.0",
   "description": "find the cost of adding a npm package to your bundle.",
   "main": "index.js",

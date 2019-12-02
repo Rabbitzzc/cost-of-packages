@@ -1,4 +1,4 @@
-# cost-of-packages
+# depcost
 find the cost of adding a npm package to your bundle.
 
 ## Todo
@@ -34,6 +34,7 @@ https://github.com/siddharthkp/cost-of-modules/blob/master/src/helpers.js
 #### argv plan
 - [ ] -v | --version
 - [ ] -d  (depend)
+- [ ] -l |--less (少于10个)
 - [ ] -D (devDepend)
 - [ ] -s | --sort
 - [ ] -c | --chart

@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 "use strict";
 exports.__esModule = true;
+var fs = require("fs");
 var yargs = require("yargs");
 // yargs.usage('Usage: $0 <command> [options]')
 //     .command('count', 'Count the lines in a file')
@@ -38,4 +39,13 @@ var argv = yargs.options({
         describe: 'highlighting unused dependencies in your package.json'
     }
 }).argv;
+// 如果不存在package.json文件，则退出
+if (!fs.existsSync('package.json')) {
+    console.log('package.json not found!');
+    console.log();
+    process.exit();
+}
+// 计算 depend 函数，返回数组对象, [{name: '', size: ''}]
+// 计算 devDepend 函数
+// sort 函数 排序数组，数组对象的size排序
 console.log(argv);
