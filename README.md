@@ -46,3 +46,21 @@ https://github.com/siddharthkp/cost-of-modules/blob/master/src/helpers.js
 添加一个参数，要么本地node_modules分析，要么通过啥分析
 
 生成的图表，是通过生成图表呢，还是通过手绘实现。。。。。
+
+#### 思路
+
+##### 如何计算每个包中的数量呢
+安装依赖，并分析每个依赖，同时针对于每个依赖包大小进行匹配，最后再删除node_modules
+
+https://www.npmjs.com/package/update-notifier
+更新注意事项，是否需要提示等等
+
+同时如果本地已经安装了相应版本的packages，是否就不需要去判断呢？
+（断网情况，命令是否可行）
+https://medium.com/@vovabilonenko/making-node-modules-smaller-and-faster-2199a7bbf5b3
+
+https://github.com/antonmedv/jsize/blob/master/bin/jsize
+
+https://github.com/egoist/package-size/blob/master/lib/index.js
+
+看了好几个版本的写法，基本上都是先通过安装node_modules，然后再对每个包进行minify gzip功能压缩，手动判断，

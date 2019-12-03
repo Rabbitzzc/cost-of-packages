@@ -45,7 +45,7 @@ if (!fs.existsSync('package.json')) {
     console.log();
     process.exit();
 }
-// 计算 depend 函数，返回数组对象, [{name: '', size: ''}]
+// 计算 depend 函数，返回数组对象, [{name: '包名', size: '大小', dep: '安装依赖数量', devdep: '运行依赖数量'}] 
 // 计算 devDepend 函数
 // sort 函数 排序数组，数组对象的size排序
 console.log(argv);
